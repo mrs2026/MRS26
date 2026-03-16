@@ -7,7 +7,7 @@ Here is the github repo for the AAAI 2026 Workshop on Multi-Agent Path Finding. 
 The current version on GitHub can be seen at [the following link](http://mapf-workshop.github.io/aaai26):
 
 ```
-http://mapf-workshop.github.io/aaai26
+https://mrs2026.github.io/MRS26/
 ```
 
 ## Editing the Website
