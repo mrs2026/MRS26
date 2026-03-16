@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <base href=".">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" type="text/css" media="all" href="assets/main.css" />
+    <meta name="description"
+        content="Website for the Workshop on Multi-Robot Systems at Scale: Challenges and Opportunities, held as part of the IROS 2026 Conference in Pittsburgh">
+    <meta name="resource-type" content="document">
+    <meta name="distribution" content="global">
+    <meta name="KeyWords" content="Conference">
+    <title>Home | IROS 2026 MRS Workshop</title>
+</head>
+
+<body>
+
+    <div class="banner">
+        <div class="banner-content">
+            <img src="assets/banner.png" alt="Banner">
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navigation">
+            <a href="." class="current" title="Conference Home Page">Home</a>
+            <a href="#about" title="About the Workshop">About</a>
+            <!-- <a href="#important-dates" title="Important Dates">Important Dates</a> -->
+            <!-- <a href="#call-for-contributions" title="Call for Contributions">Call for Contributions</a>
+            <a href="#schedule" title="Conference Schedule">Schedule</a>
+            <a href="#invited-speakers" title="Invited Speakers">Invited Speakers</a>
+            <a href="#panel" title="Panel Discussion">Panel Discussion</a> -->
+            <a href="#organizers" title="Conference Flyer">Organizers</a>
+            <a href="#contact" title="Contact Us">Contact</a>
+        </div>
+    </div>
+
+
+    <!-- <div class="workshop-completion" style="text-align: center; margin: 20px 0;">
+        <p style="font-size: 1.1em; font-weight: bold;">The workshop was completed successfully. Thank you everyone for
+            attending!</p>
+        <img src="assets/WorkshopPhoto.JPG" alt="Workshop Photo" style="width: 70%; object-fit: cover;
+    image-rendering: smooth; border-radius: 8px; float: center; margin-right: 15px;">
+    </div> -->
+
+
+    <div class="content">
+
+        <h2 style="text-align: center;">
+            Location:
+            <a style="color:#0977aacc;" href="https://2026.ieee-iros.org/attend/conference-venue/" target="_blank">
+                David L. Lawrence Convention Center, Pittsburgh
+            </a>
+            <!-- <br> -->
+            <!-- <br> -->
+            <!-- <a style="color:#0977aacc; "
+                href="https://us06web.zoom.us/rec/share/UasDpeH-8FG-Jsw-QCRMF-_nA5IASSd8ntzQ5UNslmasYBXyvnpidUdATwzLQx4R.ut4s14e2AyR_eZDT?startTime=1769386004000">
+                Zoom Recording Link
+
+            </a> -->
+        </h2>
+
+        <h2 id="about">What This Workshop Is About</h2>
+        <p>
+            Multi-Robot Systems (MRS) have seen real-world success across academia (such as DARPA Sub-T and OFFSET
+            programs) and in industry, including Amazon and Serve Robotics. Recently, MRS research has reached an
+            inflection point: Do we still need to constrain problems to decentralized settings? How can machine learning
+            be effectively leveraged with multiple embodied agents? What role should humans play in multi-robot teams?
+            Up to this point, MRS research has produced a rich body of algorithms and theoretical results, however,
+            unified system-level solutions are still necessary for large-scale, reliable deployments outside highly
+            structured domains. This half-day workshop aims to examine why this gap persists and what research
+            directions are required to close it. In this workshop, we convene leading researchers and practitioners to
+            reflect on the history of MRS, assess the current state of the field, and identify the scientific and
+            engineering challenges that must be addressed to enable robust, scalable multi-robot systems in real-world
+            environments. Speakers and panelists have been specifically selected for their willingness to offer a
+            critical, evidence-based perspective on the future of MRS. The workshop will begin with 2 short invited
+            talks tracing the historical development of MRS and examining the applicability of recent advancements.
+            These will set the stage for a moderated panel of 4-5 leaders from academia and industry, discussing
+            unresolved bottlenecks and potential breakthroughs over 5-, 10-, and 15-year horizons. Structured breakout
+            groups will then focus on 3-5 themes, identifying key barriers and concrete milestones for progress. The
+            workshop will conclude with a synthesis session, and organizers will distill the discussions into a publicly
+            available MRS Research Roadmap summarizing key challenges and benchmarks.
+        </p>
+
+        <!-- New Important Dates Section -->
+        <!-- <br>
+        <h2 id="important-dates">Important Dates</h2>
+        <table class="important-dates">
+            <thead>
+                <tr>
+                    <th style="font-weight: bold; font-family: Futura, sans-serif;">Event</th>
+                    <th style="font-weight: bold; font-family: Futura, sans-serif;">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paper Submission Deadline</td>
+                    <td><s style="color: red;">October 22, 2025</s> <b>November 6, 2025</b> (AOE)</td>
+                </tr>
+
+                <tr>
+                    <td>Notifications Sent to Authors</td>
+                    <td><s style="color: red;">November 5, 2025</s> <b>November 13, 2025</b></td>
+                </tr>
+
+                <tr>
+                    <td>AAAI-26 Early Registration Deadline</td>
+                    <td><b>November 16, 2025</b> (11:59 Eastern Time)</td>
+                </tr>
+
+                <tr>
+                    <td>Camera Ready Deadline for Submitted Papers</td>
+                    <td><b>January 5, 2026</b></td>
+                </tr>
+
+                <tr>
+                    <td>Workshop Date</td>
+                    <td><b>January 26, 2026</b></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> -->
+        <!-- 
+        <h2 id="call-for-contributions">Call for Contributions</h2>
+        <p style="text-align: center;">
+            <s style="color: red;""> 
+            <b>Submission Site:</b>
+            <a href=" https://openreview.net/group?id=AAAI.org/2026/Workshop/WoMAPF#tab-your-consoles" target="_blank">
+                https://openreview.net/group?id=AAAI.org/2026/Workshop/WoMAPF
+                </a>
+            </s>
+            <br>
+            (Closed)
+        </p>
+
+        <p>
+            We invite high-quality paper submissions focusing on Multi-Agent Path Finding (MAPF).
+            Selected papers will be invited to be presented in a lightning talk or poster session during the workshop,
+            and a
+            best paper award will be chosen among the participants.
+            Topics of interest include, but are not limited to:
+        </p>
+
+        <ul>
+            <li>Search-, rule-, reduction-, reactive-, and learning-based planners</li>
+            <li>Planning and execution algorithms for dynamic or uncertain environments</li>
+            <li>Decentralised MAPF and multi-agent reinforcement learning</li>
+            <li>Kinodynamically feasible multi-agent planning</li>
+            <li>Planning in continuous time and space</li>
+            <li>Customised MAPF planners for real robots</li>
+            <li>Cooperation in heterogeneous robot teams</li>
+            <li>Surveys of MAPF modeling, solvers, or benchmarks</li>
+            <li>Multi-robot or human-multi-robot collaboration</li>
+            <li>Multi-agent LLM systems with MAPF methods</li>
+            <li>Live demo of relevant software or hardware systems</li>
+        </ul>
+
+        <p>
+            There is no required format for the submissions. If possible, we recommend the <a
+                href="https://aaai.org/conference/aaai/aaai-26/student-abstract-and-poster-program-call/">AAAI
+                2026 style</a>.
+            The workshop is non-archival.
+        </p>
+
+        <p>
+            We encourage interested participants to submit ongoing research as well as recent publications. All
+            submissions will follow a single-blind review process conducted by a Program Committee assembled from the
+            organizers, the advisory board, and other experts in
+            the field.
+        </p>
+
+        <p>
+            Accepted papers will be made available on the workshop website and the authors will be invited to present
+            their
+            work
+            as a short talk during the workshop and/or as a poster.
+        </p> -->
+
+        <!-- <br>
+        <div>
+
+            <h2 id="schedule">Conference Program</h2>
+
+            <table class="schedule">
+                <tr>
+                    <td class="time">08:45</td>
+                    <td>
+                        <div class="title">Opening Remarks</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">09:00</td>
+                    <td>
+                        <div class="title">Poster Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=nwcFuR19AJ" class="paper-link">MAD-PINN: A
+                                    Decentralized Physics-Informed Machine
+                                    Learning Framework for Safe and Optimal Multi-Agent Control</a> <span
+                                    class="speaker">Manan Tayal, Aditya Singh, Shishir Kolathaya, Somil Bansal</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=iuXcr6CkDA" class="paper-link">Interpretable
+                                    Multi-Agent Path Finding via Decision Tree
+                                    Extraction from Neural Policies</a> <span class="speaker">Thibault Lahire</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=nBkpOmoEyb" class="paper-link">Acquisition of
+                                    Cooperative Behavior in Multi-Agent Path
+                                    Finding</a> <span class="speaker">Haruto Sugawara, Hiroyuki Toda</span></li>
+                            <li><a href="https://openreview.net/forum?id=Po12bMzdAx" class="paper-link">Reinforcement
+                                    Learning for Multi-Agent Planning in the
+                                    League of Robot Runners</a> <span class="speaker">Alexandra Barancikova, Reuth
+                                    Mirsky</span></li>
+                            <li><a href="https://openreview.net/forum?id=363T05eYLh" class="paper-link">Parallelism
+                                    Meets Adaptiveness: Scalable Documents
+                                    Understanding in Multi-Agent LLM Systems</a> <span class="speaker">Chengxuan Xia,
+                                    Qianye Wu, Sixuan Tian, Yilun Hao</span></li>
+                            <li><a href="https://openreview.net/forum?id=7oQSHshgg4" class="paper-link">Practical
+                                    Consideration for Optimal MAPFr Solvers</a>
+                                <span class="speaker">Andy Li, Zhe Chen, Daniel Harabor</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">09:30</td>
+                    <td>
+                        <div class="title">Paper Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=WUbGQQ9C0E" class="paper-link">Pairwise is Not
+                                    Enough: Hypergraph Neural Networks for
+                                    Multi-Agent Pathfinding</a> <span class="speaker">Rishabh Jain, Keisuke Okumura,
+                                    Michael Amir, Pietro Lio, Amanda Prorok</span></li>
+                            <li><a href="https://openreview.net/forum?id=OEtUZfSDhx" class="paper-link">Anytime
+                                    Single-Step MAPF Planning with Anytime PIBT</a>
+                                <span class="speaker">Nayesha Gandotra, Rishi Veerapaneni, Muhammad Suhail Saleem,
+                                    Daniel Harabor, Jiaoyang Li, Maxim Likhachev</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=RRbMNef7Ae" class="paper-link">Blue-Sky:
+                                    Multi-Agent Path Finding with Unassigned Agents
+                                    (MAPFUA)</a> <span class="speaker">Ariel Felner, Roni Stern</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">10:00</td>
+                    <td class="special">Tea Break</td>
+                </tr>
+                <tr>
+                    <td class="time">10:15</td>
+                    <td>
+                        <div class="title">Keynote Talk</div>
+                        <div style="margin-top: 5px;">Context-aware planning and allocation: coordinating robots at
+                            Amazon scale</div>
+                        <span class="speaker"><b>Alex Barbosa</b></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">11:00</td>
+                    <td class="special">Short Break</td>
+                </tr>
+                <tr>
+                    <td class="time">11:15</td>
+                    <td>
+                        <div class="title">Poster Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=Z8A9zvG4WE" class="paper-link">On the
+                                    Fundamental Limitations of Decentralized Learnable
+                                    Reward Shaping in Cooperative Multi-Agent Reinforcement Learning</a> <span
+                                    class="speaker">Aditya Akella</span></li>
+                            <li><a href="https://openreview.net/forum?id=qUGQjJEodp" class="paper-link">Modelling
+                                    Multi-Agent Pathfinding Problems by Integrating
+                                    Connectivity and No-Collision Constraints</a> <span class="speaker">Jiri Svancara,
+                                    Roman Barták, Ian Miguel, Joan Espasa</span></li>
+                            <li><a href="https://openreview.net/forum?id=1em80B9t9x" class="paper-link">Multi-Agent Path
+                                    Finding for Large Agents Is
+                                    Intractable</a> <span class="speaker">Artem Agafonov, Konstantin Yakovlev</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=1XrApV9wl4" class="paper-link">Two-Oracle Path
+                                    Planning Consolidated by Heuristic-Rich
+                                    Information</a> <span class="speaker">Xi Chen, Yue Zhang, Zhang Yonggang</span></li>
+                            <li><a href="https://openreview.net/forum?id=QpPjSkOUsj" class="paper-link">Collaborative
+                                    Quadruped Transportation in 3D Terrain with
+                                    Constrained Diffusion</a> <span class="speaker">Williard Joshua Jose, Li Chen, Hao
+                                    Zhang</span></li>
+                            <li><a href="https://openreview.net/forum?id=B3ut24FzwD" class="paper-link">Minimizing
+                                    Makespan with Conflict-Based Search for
+                                    Optimal Multi-Agent Path Finding</a> <span class="speaker">Amir Maliah, Dor Atzmon,
+                                    Ariel Felner</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">11:35</td>
+                    <td>
+                        <div class="title">Paper Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=ppr77dTFWR" class="paper-link">Minimizing
+                                    Makespan with LaCAM* for Optimal Multi-Agent
+                                    Path Finding</a> <span class="speaker">Omer Idgar, Dor Atzmon, Ariel Felner</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=B2W1RcgD0W" class="paper-link">When Distance
+                                    Matters: Wasserstein Trust Regions for
+                                    Multi-Agent Coordination</a> <span class="speaker">Chirayu Salgarkar, Ali
+                                    Baheri</span></li>
+                            <li><a href="https://openreview.net/forum?id=roHh7VUnFh" class="paper-link">Flow-Based
+                                    Guidance Framework with Flex Distribution for
+                                    w-Optimal Multi-Agent Path Finding</a> <span class="speaker">Shao-Hung Chan, Thomy
+                                    Phan, Sven Koenig</span></li>
+                            <li><a href="https://openreview.net/forum?id=vq7g3MNsFV" class="paper-link">Extending PiBT
+                                    to support Heterogeneous Robot Fleets</a>
+                                <span class="speaker">Arjo Chakravarty, Michael X Grey, M. A. Viraj J. Muthugala, Mohan
+                                    Rajesh Elara</span>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">12:15</td>
+                    <td class="special">Lunch</td>
+                </tr>
+                <tr>
+                    <td class="time">13:00</td>
+                    <td class="special">Poster Session</td>
+                </tr>
+                <tr>
+                    <td class="time">14:00</td>
+                    <td>
+                        <div class="title">Keynote Talk</div>
+                        <div style="margin-top: 5px;">Multi-agent Path Finding: Heuristic Search Meets Machine Learning
+                        </div>
+                        <span class="speaker"><b>Konstantin Yakovlev</b></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">14:45</td>
+                    <td>
+                        <div class="title">Paper Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=4U6MH1tihw" class="paper-link">MARL-GPT:
+                                    Foundation Model for Multi-Agent Reinforcement
+                                    Learning</a> <span class="speaker">Maria Nesterova, Mikhail Kolosov, Anton
+                                    Andreychuk, Egor Cherepanov, Oleg Bulichev, Alexey Kovalev, Konstantin Yakovlev,
+                                    Aleksandr Panov, Alexey Skrynnik</span></li>
+                            <li><a href="https://openreview.net/forum?id=ePPOoz8KKp" class="paper-link">VAMP-MR:
+                                    Vector-Accelerated Motion Planning and Execution
+                                    for Multi-Robot-Arms</a> <span class="speaker">Philip Huang, Chenrui Gao, Jiaoyang
+                                    Li</span></li>
+                            <li><a href="https://openreview.net/forum?id=gLg7bHryTU" class="paper-link">Fault Tolerance
+                                    in Multi Agent Systems</a> <span class="speaker">Savitha Suresh, Akshay
+                                    Narayan</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">15:15</td>
+                    <td class="special">Tea Break and Poster Session</td>
+                </tr>
+                <tr>
+                    <td class="time">15:30</td>
+                    <td>
+                        <div class="title">Paper Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+
+                            <li><a href="https://openreview.net/forum?id=bXSZH2UdyB" class="paper-link">db-LaCAM: Fast
+                                    and Scalable Multi-Robot Kinodynamic
+                                    Motion Planning with Discontinuity-Bounded Search and Lightweight MAPF</a> <span
+                                    class="speaker">Akmaral Moldagalieva, Keisuke Okumura, Amanda Prorok, Wolfgang
+                                    Hönig</span></li>
+                            <li><a href="https://openreview.net/forum?id=3PJzX2ZW8N" class="paper-link">Dual-CBS: A
+                                    Hierarchical Approach via Conflict-Based
+                                    Search and Sampling for Multi-Agent Motion Planning</a> <span
+                                    class="speaker">Joonyeol Sim, Shao-Hung Chan, Sven Koenig</span></li>
+                            <li><a href="https://openreview.net/forum?id=7dj96dzpkD" class="paper-link">CAMAR:
+                                    Continuous Actions Multi-Agent Routing</a> <span class="speaker">Artem Pshenitsyn,
+                                    Aleksandr Panov, Alexey Skrynnik</span></li>
+                            <li><a href="https://openreview.net/forum?id=cOLygycFSU" class="paper-link">CoRL-MPPI:
+                                    Enhancing MPPI With Learnable Behaviours For
+                                    Efficent And Provably-Safe Multi-Robot Collision Avoidance</a> <span
+                                    class="speaker">Stepan Dergachev, Artem Pshenitsyn, Aleksandr Panov, Alexey
+                                    Skrynnik, Konstantin Yakovlev</span></li>
+                            <li><a href="https://openreview.net/forum?id=Hy1TrLLj5K" class="paper-link">Cube-Based
+                                    Automated Storage and Retrieval Systems: A
+                                    Multi-Agent Path Finding Approach</a> <span class="speaker">Yi Zheng, Yimin Tang, T.
+                                    K. Satish Kumar, Sven Koenig</span></li>
+                            <li><a href="https://openreview.net/forum?id=gvyPg7HlcQ" class="paper-link">Optimization of
+                                    Cable Routing During Construction</a>
+                                <span class="speaker">Orion Sehn, Nathan R. Sturtevant, Brian Gue</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=NntpMClWZm" class="paper-link">Learning to
+                                    Communicate Locally for Large-Scale
+                                    Multi-Agent Pathfinding</a> <span class="speaker">Valeriy Vyaltsev, Alsu Sagirova,
+                                    Anton Andreychuk, Yuri Kuratov, Konstantin Yakovlev, Aleksandr Panov, Alexey
+                                    Skrynnik</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">16:40</td>
+                    <td class="special">Short Break</td>
+                </tr>
+                <tr>
+                    <td class="time">16:55</td>
+                    <td>
+                        <div class="title">Paper Presentation Session</div>
+                        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+                            <li><a href="https://openreview.net/forum?id=wbDRcRXFSO" class="paper-link">Collaborative
+                                    Multi-Robot Non-Prehensile Manipulation via
+                                    Flow-Matching Co-Generation</a> <span class="speaker">Yorai Shaoul, Zhe Chen,
+                                    Mohamed Naveed Gul Mohamed, Federico Pecora, Maxim Likhachev, Jiaoyang Li</span>
+                            </li>
+                            <li><a href="https://openreview.net/forum?id=6wWDdckT1p" class="paper-link">Balancing
+                                    Robustness and Efficiency in Multi-Agent
+                                    Combinatorial Path Finding with Sum of Service Time</a> <span
+                                    class="speaker">Yehonatan Kidushim, Meir Kalech, Roni Stern, Dor Atzmon, Avraham
+                                    Natan</span></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">17:15</td>
+                    <td>
+                        <div class="title">Panel Discussion</div>
+                        <div style="margin-top: 5px;">Aligning Research Direction Between Academia and Industry</div>
+                        <span class="speaker">Alex Barbosa, Mohan Rajesh Elara, Keisuke Okumura, Konstantin
+                            Yakovlev</span>
+                        <p style="font-size: 0.9em; margin-top: 5px;"><i><a
+                                    href="https://app.sli.do/event/tjKop9BBJdjHNJDZ9wAL1U">Link for asking and voting
+                                    for questions</a></i>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="time">18:15</td>
+                    <td>
+                        <div class="title">Closing Remarks</div>
+                        <p style="font-size: 0.9em; margin-top: 5px;"><i><a
+                                    href="https://forms.office.com/r/75MUC8KS8D">Post-workshop survey</a></i>
+                            <img src="assets/QRCode for WoMAPF 2026 feedback survey.png"
+                                alt="Post-workshop survey QR Code"
+                                style="display: block; margin: 10px 0; max-width: 200px;">
+                        </p>
+                    </td>
+                </tr>
+            </table> -->
+
+
+        <!-- <h2 id="invited-speakers">Invited Speakers</h2>
+
+            <h3 style="color: rgb(66, 66, 66);">Context-aware planning and allocation: coordinating robots at Amazon
+                scale, by <a href="https://scholar.google.com/citations?user=Hs79dGsAAAAJ&hl=en" target="_blank">Alex
+                    Barbosa</a>
+            </h3>
+
+            <p style="text-align: center;">
+                <img src="assets/speakers/alex.jpg" alt="Alex Barbosa" style="width: 250px; height: 250px; object-fit: cover;
+    image-rendering: smooth; border-radius: 8px; float: left; margin-right: 15px;">
+            </p>
+
+
+            <p><b>Bio:</b> Alex Barbosa is a Senior Applied Scientist at Amazon Robotics, where he researches algorithms
+                for coordinating large-scale fleets of mobile robots. He earned his PhD from the University of Illinois
+                at Urbana-Champaign, working with Professor Naira Hovakimyan on large-scale optimization under
+                uncertainty, with applications to autonomous operation in crop fields. Prior to his PhD, Alex co-founded
+                a company-ultimately acquired-that developed mobile inspection robots for the nuclear and oil & gas
+                industries. His hands-on expertise is further shaped by extensive participation in robotics competitions
+                such as BattleBots and RoboGames, where he earned multiple awards while having fun along the way.</p>
+            <p><b>Abstract:</b> Amazon operates the world's largest fleet of mobile robots, with over a million systems
+                deployed across hundreds of facilities worldwide. Coordinating fleets at this scale introduces
+                challenging—and often unique—problems in path planning and task allocation. This talk explores methods
+                for learning global state representations that inform local control policies and guide search-based
+                algorithms for large-scale coordination. I will also introduce the Block Rearrangement Problem (BRaP)
+                and discuss how Multi-Agent Path Finding (MAPF) provides a promising framework for addressing it.</p>
+
+            <hr style="margin: 2em auto; max-width: 800px; border: 0; border-top: 1px solid #ddd;">
+
+            <h3 style="color: rgb(66, 66, 66);">Multi-agent Path Finding: Heuristic Search Meets Machine Learning, by <a
+                    href="https://scholar.google.com/citations?user=Tw0A27kAAAAJ&hl=en" target="_blank">Konstantin
+                    Yakovlev</a></h3>
+
+            <p style="text-align: center;">
+                <img src="assets/speakers/konstantin.jpg" alt="Konstantin Yakovlev" style="width: 250px; height: 250px; object-fit: cover;
+    image-rendering: smooth; border-radius: 8px; float: left; margin-right: 15px; object-fit: cover;">
+            </p>
+
+
+            <p><b>Bio:</b> Konstantin Yakovlev is a PhD in computer science and is currently a principal investigator at
+                the Federal Research Center for Computer Science and Control of Russian Academy of Sciences and holds
+                the same position at AIRI. Meanwhile, he is an associate professor at St.Petersburg University where he
+                also leads the newly established Markov Lab (Andrey Markov is the famous Russian mathematician, known
+                for his seminal contributions to computer science such as Markov chains (which laid the foundations of
+                Markov decision processes - the foundational formalism for modern reinforcement learning). He was a
+                professor at St.Petersburg University from 1880 to 1922. ). He has been contributing to multi-agent
+                pathfinding for almost a decade and is known to the community as a co-author of the several MAPF
+                planners that are tailored to solve MAPF under non-trivial assumptions like any-angle asynchronous
+                moves, agents with volumes etc. Recently he has been involved in exploring how machine learning can be
+                used to create robust and versatile MAPF algorithms that advance state of the art.</p>
+            <p><b>Abstract:</b> Coordinating multiple mobile agents, such as warehouse robots or autonomous vehicles, in
+                a shared environment is a core challenge in robotics and artificial intelligence. The Multi-Agent Path
+                Finding (MAPF) formalism provides a fundamental abstraction for this problem, enabling the development
+                of algorithms with strong theoretical guarantees. Heuristic search has been highly successful in this
+                domain, producing optimal or bounded-suboptimal solutions with proven guarantees. Rule-based solvers and
+                optimization techniques (like Large Neighbourhood Search) have also proven to be effective tools to
+                tackle MAPF by providing high-quality solutions within a much lower computational budget. Still most of
+                the modern search-based and rule-based MAPF solvers intrinsically assume that the multi-agent system is
+                controlled in a centralized fashion and it is not trivial to adapt them to real-world constraints like
+                partial observability and limited communication. This is where ML-based approaches may come on stage and
+                overcome the limitations of conventional planning-based methods. This talk explores how heuristic search
+                may be integrated with machine learning (i.e. deep reinforcement learning, imitation learning,
+                transformers, large-scale learning) to create new generation of (decentralized) MAPF solvers.
+                Specifically, I will talk about the methods like Switcher, Follower, MATS-LP, that are centred around
+                the idea of creating a hybrid solver which relies on both search and learning while solving the problem
+                at hand, and more recent approaches like MAPF-GPT (and its derivatives) which are based on imitation
+                learning at scale and (almost) do not rely on search to decide which actions the agents should take at
+                each configuration/time step.</p>
+
+            <br>
+
+            <h2 id="panel">Panel Discussion</h2>
+            <p>
+                The panel discussion, titled "Aligning Research Problems Between Academia and Industry" will feature
+                experts in the field of Multi-Agent Path Finding (MAPF) who will
+                discuss current challenges, future directions, and answer questions from the audience. The panelists
+                include the two invited speakers, <b>Alex Barbosa</b> and <b>Konstantin Yakovlev</b>, along with
+                <b>Mohan Rajesh Elara</b>
+                and <b>Keisuke Okumura</b>.
+            </p>
+
+            <h3 style="color: rgb(66, 66, 66);"><a
+                    href="https://scholar.google.com.sg/citations?user=_KcjygcAAAAJ&hl=en" target="_blank">Mohan Rajesh
+                    Elara</a>
+            </h3>
+
+            <p style="text-align: center;">
+                <img src="assets/speakers/mohan.jpg" alt="Mohan Rajesh Elara" style="width: 250px; height: 250px; object-fit: cover;
+    image-rendering: smooth; border-radius: 8px; float: left; margin-right: 15px;">
+            </p>
+
+
+            <p><b>Bio:</b> Dr. Mohan is currently an Associate Professor with the Engineering Product Development Pillar
+                at the Singapore University of Technology and Design. He received his Ph.D. and M.Sc degrees from the
+                Nanyang Technological University. His research interests are in robotics with an emphasis on
+                reconfigurable platforms as well as research problems related to embodied-AI and autonomous systems. He
+                has published more than 300 papers in leading journals, books, and conferences. Dr. Mohan is currently
+                serving as an Associate Editor of the IEEE Robotics & Automation Letters and IEEE Nanotechnology
+                Magazine. He is the recipient of the Tatler Asia's Gen.T Leaders of Tomorrow, SG Mark Design, ASEE Best
+                of Design in Engineering Award, Tan Kah Kee Young Inventors' Award and A' Design award. He is the
+                co-founder of Lionsbot, a Singapore-headquartered robotics company which designs and manufactures
+                autonomous cleaning robots for global deployments. Also, he is the co-founder of the Wefaa Robotics, an
+                edutech startup that offers transformative educational robotic products for the global markets. Dr.
+                Mohan has served in various positions of organizing and technical committees of several international
+                competitions and conferences.</p>
+
+            <h3 style="color: rgb(66, 66, 66);"><a href="https://scholar.google.com/citations?user=4dFSWwMAAAAJ&hl=en"
+                    target="_blank">Keisuke Okumura</a>
+            </h3>
+
+            <p style="text-align: center;">
+                <img src="assets/speakers/keisuke.jpg" alt="Keisuke Okumura" style="width: 250px; height: 250px; object-fit: cover;
+    image-rendering: smooth; border-radius: 8px; float: left; margin-right: 15px;">
+            </p>
+
+
+            <p><b>Bio:</b> Keisuke Okumura is a Researcher at the National Institute of Advanced Industrial Science and
+                Technology (AIST), Japan, and a Visiting Scholar at the University of Cambridge, UK. He received his
+                Ph.D. in Computer Science from Tokyo Institute of Technology in 2023. His research focuses on
+                intelligent collective behaviour of swarm agents, particularly the development of multi-agent planning
+                methods tailored to large-scale automation. His honours include the ICAPS 2022 Best Student Paper Award
+                and Tokyo Tech's Ph.D. Dissertation Award (2024).</p>
+            <br> -->
+
+
+        <!-- <br style="margin: 1em 1em;">
+
+            <h4 style="text-align: center;"> Link for attendees to ask and vote for questions </p>
+            </h4>
+            <a href="https://app.sli.do/event/tjKop9BBJdjHNJDZ9wAL1U">
+                <img src="assets/panel-question/slidoQR.jpeg" alt="Slido QR Code"
+                    style="display: block; margin: 20px auto; max-width: 300px;">
+            </a>
+            <p style="text-align: center; font-size: 0.9em;"><i>Tap or scan the QR code or visit <a
+                        href="https://wall.sli.do/ ">slido</a> and use code #5711859</i></p>
+
+            <br> -->
+
+        <div class="organizers-section">
+            <h2 id="organizers">Workshop Organizers</h2>
+            <div class="organizer-grid">
+                <a href="https://cs.brown.edu/people/faculty/nayanian/" target="_blank" class="organizer-link">
+                    <div class="organizer-card">
+                        <img src="assets/organizers/nora.jpeg" alt="Organizer 1">
+                        <div class="organizer-info">
+                            <h3>Nora Ayanian</h3>
+                            <p>Professor at Brown University </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scholar.google.com/citations?user=rTz0anAAAAAJ&hl=en" target="_blank"
+                    class="organizer-link">
+                    <div class="organizer-card">
+                        <img src="assets/organizers/TD.jpg" alt="Organizer 4">
+                        <div class="organizer-info">
+                            <h3>Tanishq Duhan</h3>
+                            <p>PhD. Student at National University of Singapore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://vmedwards.github.io/" target="_blank" class="organizer-link">
+                    <div class="organizer-card">
+                        <img src="assets/organizers/torrie.webp" alt="Organizer 2">
+                        <div class="organizer-info">
+                            <h3>Victoria Edwards</h3>
+                            <p>Assistant Professor at College of the Atlantic</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.marmotlab.org/bio.html" target="_blank" class="organizer-link">
+                    <div class="organizer-card">
+                        <img src="assets/organizers/GSartoretti.jpg" alt="Organizer 4">
+                        <div class="organizer-info">
+                            <h3>Guillaume Sartoretti</h3>
+                            <p>National University of Singapore</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://scholar.google.com/citations?user=oXMfWdoAAAAJ&hl=en" target="_blank"
+                    class="organizer-link">
+                    <div class="organizer-card">
+                        <img src="assets/organizers/thales.jfif" alt="Organizer 3">
+                        <div class="organizer-info">
+                            <h3>Thales C. Silva</h3>
+                            <p>Post Doc at Brown University</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <!-- </div> -->
+
+
+        <!-- New University Logos Section -->
+        <!-- <br>
+        <div class="university-logos" style="display: flex; gap: 20px; justify-content: center; margin: 30px 0;">
+            <div>
+                <img src="assets/university/monash.png" alt="University 1" style="height:130px; width:auto;">
+            </div>
+            <div>
+                <img src="assets/university/cmu.jpg" alt="University 2" style="height:130px; width:auto;">
+            </div>
+            <div>
+                <img src="assets/university/nus.jpg" alt="University 3" style="height:130px; width:auto;">
+            </div>
+        </div> -->
+
+    </div>
+    <br>
+    <h2 id="contact" style="text-align: center;">Contact Us</h2>
+    <p style="text-align: center;">
+        For any questions or inquiries, please email
+        <a href="mailto:vedwards@coa.edu">vedwards@coa.edu</a> or <a
+            href="mailto:t.duhan@nus.edu.sg">t.duhan@nus.edu.sg</a>
+    </p>
+
+    <footer>
+        &copy; Conference Organizers
+        &nbsp;|&nbsp; Design by <a href="https://github.com/mikepierce">Mike Pierce</a>
+    </footer>
+</body>
+
+</html>
