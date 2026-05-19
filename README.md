@@ -1,10 +1,10 @@
 ![Screenshot of the Website](assets/screenshot.png)
 
-Here is the github repo for the AAAI 2026 Workshop on Multi-Agent Path Finding. Below we describe some basics of how to edit and view the website.
+Here is the GitHub repo for the accepted IROS 2026 Workshop on Multi-Robot Systems at Scale: Challenges and Opportunities. Below we describe some basics of how to edit and view the website.
 
 ## Seeing the Website
 
-The current version on GitHub can be seen at [the following link](http://mapf-workshop.github.io/aaai26):
+The current version on GitHub can be seen at [the following link](https://mrs2026.github.io/MRS26/):
 
 ```
 https://mrs2026.github.io/MRS26/
