@@ -253,17 +253,21 @@ td {
 }
 
 .content h2 {
-    margin-top: 1.35em;
-    margin-bottom: 0.55em;
+    margin: 0 auto 0.6em;
     max-width: 28ch;
 }
 
-.content h2:first-of-type {
-    margin-top: 0.25em;
+/* Every top-level section shares one rhythm: heading, optional intro, content. */
+.page-section {
+    margin-top: clamp(2.75rem, 6vw, 4.25rem);
+}
+
+.page-section > p:last-child {
+    margin-bottom: 0;
 }
 
 .workshop-summary {
-    margin: 0 auto clamp(2.1rem, 4vw, 3rem);
+    margin: 0 auto;
     padding: clamp(1.25rem, 3vw, 2rem);
     border: 1px solid rgba(12, 107, 114, 0.22);
     border-radius: var(--radius-md);
@@ -339,60 +343,49 @@ td {
 
 .section-intro {
     max-width: 72ch;
-    margin: -0.1rem auto 1.25rem;
+    margin: 0 auto 1.5rem;
     color: var(--muted);
     text-align: center;
 }
 
-.breakout-section {
-    margin: clamp(2.2rem, 5vw, 3.6rem) auto;
-    padding: clamp(1.25rem, 3vw, 2rem);
-    border: 1px solid rgba(12, 107, 114, 0.24);
-    border-radius: var(--radius-md);
-    background: linear-gradient(145deg, rgba(246, 251, 249, 0.96), rgba(255, 247, 241, 0.92));
-    box-shadow: 0 12px 28px rgba(16, 57, 62, 0.09);
-}
-
-.breakout-section h2 {
-    margin-top: 0;
-}
-
 .breakout-topics {
+    counter-reset: topic;
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.8rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: clamp(0.8rem, 1.9vw, 1.2rem);
     width: 100%;
-    margin: 1.4rem 0;
+    margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .breakout-topics li {
-    position: relative;
+    counter-increment: topic;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
     margin: 0;
-    padding: 1rem 1rem 1rem 2.7rem;
+    padding: 1.2rem 1.25rem 1.3rem;
     border: 1px solid #d6e8e4;
-    border-radius: var(--radius-sm);
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 5px 14px rgba(16, 57, 62, 0.06);
-    font-weight: 600;
-    line-height: 1.5;
+    border-radius: var(--radius-md);
+    background: linear-gradient(145deg, #ffffff 0%, var(--surface-soft) 100%);
+    box-shadow: 0 10px 26px rgba(16, 57, 62, 0.08);
+    font-weight: 500;
+    line-height: 1.55;
 }
 
 .breakout-topics li::before {
-    content: "?";
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+    content: counter(topic, decimal-leading-zero);
     display: grid;
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 2.1rem;
+    height: 2.1rem;
     place-items: center;
     border-radius: 50%;
-    background: var(--brand);
-    color: #ffffff;
+    background: rgba(12, 107, 114, 0.1);
+    color: var(--brand);
     font-family: "Space Grotesk", "Century Gothic", sans-serif;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -402,10 +395,10 @@ td {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 1.2rem;
-    padding: 1rem 1.1rem;
-    border-radius: var(--radius-sm);
-    background: rgba(12, 107, 114, 0.09);
+    margin-top: clamp(0.8rem, 1.9vw, 1.2rem);
+    padding: 1rem 1.25rem;
+    border-radius: var(--radius-md);
+    background: rgba(12, 107, 114, 0.08);
 }
 
 .breakout-survey p {
@@ -432,11 +425,6 @@ td {
 .survey-button:hover {
     background: var(--accent);
     color: #ffffff;
-}
-
-.organizers-section {
-    margin-top: clamp(2rem, 4vw, 3.1rem);
-    padding-top: 0.35rem;
 }
 
 .organizer-grid {
@@ -473,7 +461,7 @@ td {
 
 .organizer-link:hover .organizer-card,
 .organizer-link:focus-visible .organizer-card {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     border-color: rgba(12, 107, 114, 0.45);
     box-shadow: 0 16px 30px rgba(8, 53, 58, 0.16);
 }
@@ -605,30 +593,36 @@ td {
 }
 
 table.schedule {
-    width: min(100%, 980px);
-    margin: 1.6rem auto 2rem;
+    width: min(100%, 760px);
+    margin: 0 auto;
     border-collapse: separate;
     border-spacing: 0;
     background: #ffffff;
-    border: 1px solid var(--line);
-    border-radius: 14px;
+    border: 1px solid #d6e8e4;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 26px rgba(16, 57, 62, 0.08);
 }
 
 table.schedule td {
-    padding: 0.6rem 0.8rem;
+    padding: 0.85rem 1.25rem;
     vertical-align: top;
+    border-top: 1px solid #e3eeeb;
 }
 
-table.schedule tr:nth-child(even) {
-    background-color: #f7fbfa;
+table.schedule tr:first-child td {
+    border-top: 0;
+}
+
+table.schedule tr.schedule-break td {
+    background-color: var(--surface-soft);
+    color: var(--muted);
 }
 
 td.time {
-    width: 140px;
+    width: 9rem;
     white-space: nowrap;
-    text-align: right;
+    font-variant-numeric: tabular-nums;
     font-weight: 700;
     color: var(--brand-strong);
 }
@@ -653,19 +647,7 @@ td.time {
     font-style: normal;
 }
 
-#contact {
-    width: min(94%, 1120px);
-    margin: 2rem auto 0.6rem;
-}
-
-#contact+p {
-    width: min(94%, 900px);
-    margin: 0 auto 0.6rem;
-    padding: 1rem 1.15rem;
-    border-radius: var(--radius-md);
-    border: 1px solid var(--line);
-    background: rgba(255, 255, 255, 0.92);
-    box-shadow: var(--shadow-md);
+.contact-copy {
     text-align: center;
 }
 
@@ -711,8 +693,8 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    td.time {
-        width: 90px;
+    .breakout-topics {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
@@ -751,12 +733,19 @@ footer a {
         min-height: auto;
     }
 
-    .breakout-section {
-        padding: 1rem 0.85rem;
-    }
-
     .breakout-topics {
         grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .breakout-topics li {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .breakout-topics li::before {
+        flex: 0 0 auto;
     }
 
     .breakout-survey {
@@ -790,9 +779,13 @@ footer a {
         width: min(100%, 132px);
     }
 
+    table.schedule td {
+        padding: 0.75rem 0.9rem;
+    }
+
     td.time {
-        width: 72px;
-        font-size: 0.86rem;
+        width: 7.5rem;
+        font-size: 0.9rem;
     }
 }
 
